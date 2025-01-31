@@ -1,4 +1,69 @@
 body{
     margin: 0;
     background-color: #FFF6F0;
+    font-family: "Inter", serif;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+h1, h2{
+    font-family: "Balsamiq Sans", serif;
+    font-weight: bold;
+}
+header{
+    padding: 24px 46px;
+    box-sizing: border-box;
+    background-color: #FFF6F0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 106px;
+}
+.blue_section{
+    background-color: #2682C0;
+    color: #fff;
+}
+.start{
+    padding-top: 24px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    color: #2682C0;
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.nav li{
+    margin-right: 56px;
+}
+.orange_btn{
+    background-color: #F39221;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+.regular_btn{
+    padding: 17px 35px;
+}
+.nav_btn{
+    padding: 14px 31px;
+}
+.start_text h1{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.start_text p {
+    margin-bottom: 25px;
 }
