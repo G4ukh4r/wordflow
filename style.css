@@ -24,8 +24,13 @@ header{
     background-color: #2682C0;
     color: #fff;
 }
+.white_section{
+    background-color: #FFF6F0;
+    color: #0B4973;
+}
 .start{
     padding-top: 24px;
+    padding-bottom: 170px;
 }
 .logo{
     display: flex;
@@ -66,4 +71,43 @@ nav{
 }
 .start_text p {
     margin-bottom: 25px;
+}
+.start_text{
+    max-width: 556px;
+}
+.header_down{
+    display: flex;
+    justify-content: space-between;
+}
+.format{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+h2{
+    font-size: 32px;
+    text-align: center;
+}
+.format_card p {
+    width: auto;
+    margin: 0;
+}
+.format_card h3 {
+    width: auto;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.format_card{
+    overflow: hidden;
+    max-width: 344px;
+    height: auto;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.format_card_text{
+    background-color: #2682C0;
+    padding: 28px 36px;
+    text-align: center;
 }
