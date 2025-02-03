@@ -57,10 +57,17 @@ nav{
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 10px;
+}
+.white_btn{
+    background: none;
+    color: #F39221;
+    border: 2px solid #F39221;
+    font-weight: bold;
 }
 .regular_btn{
     padding: 17px 35px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .nav_btn{
     padding: 14px 31px;
@@ -86,6 +93,7 @@ nav{
 h2{
     font-size: 32px;
     text-align: center;
+    margin-bottom: 60px;
 }
 .format_card p {
     width: auto;
@@ -105,10 +113,86 @@ h2{
     display: flex;
     flex-direction: column;
     color: #fff;
+    white-space: nowrap;
 }
 .format_card_text{
     background-color: #2682C0;
     padding: 28px 36px;
     text-align: center;
+    border-radius: 0 0 24px 24px;
 }
-.format_cards
+.format_card img {
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+    max-height: 209px;
+}
+.format_cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.white_btn.pricing{
+    margin: 0 auto;
+    display: block;
+}
+.language{
+    width: 261px;
+    height: 207px;
+    background-color: #FFF6F0;
+    color: #0B4973;
+    border-radius: 24px;
+    padding: 32px 27px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.lang_text h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+.lang_text button{
+    border: none;
+    border-radius: 6px;
+    background-color: #F39221;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 39px;
+    width: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.lang_text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    height: -webkit-fill-available;
+}
+.language img{
+    position: absolute;
+    transform: rotate(-28deg);
+    top: 60px;
+    left: 122px;
+    box-shadow: 0 0 10px 5px rgba(66, 80, 118, 10%);
+}
+.programs{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.programs_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 45px 0;
+    margin-bottom: 60px;
+}
+.learn_more{
+    display: block;
+    margin: 0 auto;
+}
