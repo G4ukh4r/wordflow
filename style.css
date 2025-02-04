@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: #FFF6F0;
     font-family: "Inter", serif;
+    font-size: 16px;
 }
 .container{
     margin: 0 auto;
@@ -20,13 +21,17 @@ header{
     justify-content: space-between;
     margin-bottom: 106px;
 }
-.blue_section{
+.blue_section, footer{
     background-color: #2682C0;
     color: #fff;
 }
 .white_section{
     background-color: #FFF6F0;
     color: #0B4973;
+}
+.programs, .format, .advantages, footer{
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 .start{
     padding-top: 24px;
@@ -52,17 +57,37 @@ nav{
 .nav li{
     margin-right: 56px;
 }
+.nav li:last-child{
+    margin-right: 0;
+}
+.nav a{
+    text-decoration: none;
+    color: #2682C0;
+}
 .orange_btn{
     background-color: #F39221;
     color: white;
     font-weight: bold;
     border: none;
+    border: 2px solid #F39221;
+    transition: 0.3s;
+}
+.orange_btn:hover{
+    background-color: #FFF6F0;
+    color: #F39221;
+    border: 2px solid #F39221;
 }
 .white_btn{
-    background: none;
+    background-color: #FFF6F0;
     color: #F39221;
     border: 2px solid #F39221;
     font-weight: bold;
+    transition: 0.3s;
+}
+.white_btn:hover{
+    background-color: #F39221;
+    color: white;
+    border: 2px solid #F39221;
 }
 .regular_btn{
     padding: 17px 35px;
@@ -71,13 +96,15 @@ nav{
 }
 .nav_btn{
     padding: 14px 31px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .start_text h1{
     font-size: 40px;
     margin-bottom: 25px;
 }
 .start_text p {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 .start_text{
     max-width: 556px;
@@ -85,10 +112,6 @@ nav{
 .header_down{
     display: flex;
     justify-content: space-between;
-}
-.format{
-    padding-top: 80px;
-    padding-bottom: 100px;
 }
 h2{
     font-size: 32px;
@@ -156,6 +179,7 @@ h2{
 .lang_text button{
     border: none;
     border-radius: 6px;
+    border: 2px solid #F39221;
     background-color: #F39221;
     padding: 5px;
     box-sizing: border-box;
@@ -165,6 +189,17 @@ h2{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: 0.3s;
+}
+.lang_text button:hover{
+    border: 2px solid #F39221;
+    background-color: #FFF6F0;
+}
+.lang_text path{
+    transition: 0.3s;
+}
+.lang_text button:hover path{
+    fill: #F39221 !important;
 }
 .lang_text{
     display: flex;
@@ -179,10 +214,11 @@ h2{
     top: 60px;
     left: 122px;
     box-shadow: 0 0 10px 5px rgba(66, 80, 118, 10%);
+    transition: 0.5s;
 }
-.programs{
-    padding-top: 80px;
-    padding-bottom: 100px;
+.language:hover img{
+    transform: rotate(-90deg);
+    top: 30px;
 }
 .programs_list{
     display: flex;
@@ -196,3 +232,114 @@ h2{
     display: block;
     margin: 0 auto;
 }
+.advantage_left{
+    display: flex;
+    gap: 85px;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.advantage_right{
+    display: flex;
+    justify-content: flex-end;
+    gap: 85px;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.adv_text{
+    max-width: 650px;
+}
+.adv_text h3{
+    font-size: 32px;
+    font-weight: 500;
+}
+.adv_text p{
+    font-size: 24px;
+    font-weight: 300;
+    color: #3489C2;
+}
+.advantage_left img, .advantage_right img{
+    border-radius: 53px;
+}
+.adv_text.right{
+    text-align: right;
+}
+.footer_about span{
+    font-size: 20px;
+}
+.footer_about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer_about img{
+    margin-bottom: 21px;
+}
+.footer_nav ul, .footer_contacts ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+.footer_nav a, .footer_contacts a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer_nav h3, .footer_contacts h3{
+    margin-bottom: 28px;
+    margin-top: 0;
+}
+.footer_contacts ul{
+    margin-bottom: 28px;
+}
+.footer_contacts li{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.footer_contacts ul > li{
+    margin-bottom: 15px;
+}
+.socials{
+    display: flex;
+    gap: 13px;
+    cursor: pointer;
+}
+.socials svg{
+    fill: #FFF6F0;
+}
+.socials svg:hover{
+    fill: #F39221;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_about{
+    max-width: 312px;
+}
+.footer_nav li{
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+.footer_button span{
+    display: block;
+    margin-bottom: 21px;
+}
+.footer_contacts li:hover a{
+    color: #F39221;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.footer_contacts svg{
+    fill: #FFF6F0;
+}
+.footer_contacts li:hover svg {
+    fill: #F39221;
+}
+.footer_nav li:hover a{
+    color: #F39221;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+
