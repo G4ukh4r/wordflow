@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="start blue_section">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <a href="#"><img src="images/WordFlow.svg" alt=""></a>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">ПРОГРАММЫ ОБУЧЕНИЯ</a></li>
+                        <li><a href="teachers.html">ПРЕПОДАВАТЕЛИ</a></li>
+                        <li><a href="#">ОТЗЫВЫ</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+                <button class="orange_btn nav_btn">ЗАПИСАТЬСЯ</button>
+            </header>
+            <div class="header_down">
+                <div class="start_text">
+                    <h1>НАШИ ПРЕПОДАВАТЕЛИ</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet, leo nec scelerisque euismod, lorem purus sollicitudin felis, non viverra risus eros sed risus. Sed in arcu dolor. Cras auctor urna vel neque finibus, vel auctor nulla bibendum. Aenean ac gravida ante, vel placerat neque. Pellentesque ut quam urna. Nulla mollis mi eget lacus fermentum, at lobortis arcu pharetra.</p>
+                    <button class="orange_btn regular_btn">ЗАПИСАТЬСЯ НА ПРОБНЫЙ КУРС</button>
+                </div>
+                <div class="teaching_image">
+                    <img src="images/teaching.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choose_teacher white_section">
+        <div class="container">
+            <h2>ВЫБЕРИ СВОЕГО ПРЕПОДАВАТЕЛЯ</h2>
+            <div class="select">
+                <select id="language_filter" class="select_teachers">
+                    <option value="" selected>Все</option>
+                    <option value="english">Английский</option>
+                    <option value="kazakh">Казахский</option>
+                    <option value="german">Немецкий</option>
+                    <option value="japanese">Японский</option>
+                    <option value="chinese">Китайский</option>
+                    <option value="french">Французский</option>
+                    <option value="spanish">Испанский</option>
+                    <option value="korean">Корейский</option>
+                </select>
+                <label for="language_filter">выберите язык</label>
+            </div>
+            <div class="teachers">
+                <div class="teacher" data-language="english">
+                    <div class="blue_background"></div>
+                    <div class="teacher_photo"></div>
+                    <div class="white_background">
+                        <h3>Имя Фамилия</h3>
+                        <div class="teacher_language">Английский язык</div>
+                        <p><span>Сертификат/диплом:</span> IELTS/TOEFL</p>
+                        <p><span>Опыт работы:</span> 10 лет</p>
+                        <button class="choose_btn white_btn">Выбрать преподавателя</button>
+                    </div>
+                </div>
+                <div class="teacher" data-language="spanish">
+                    <div class="blue_background"></div>
+                    <div class="teacher_photo"></div>
+                    <div class="white_background">
+                        <h3>Имя Фамилия</h3>
+                        <div class="teacher_language">Испанский язык</div>
+                        <p><span>Сертификат/диплом:</span> IELTS/TOEFL</p>
+                        <p><span>Опыт работы:</span> 10 лет</p>
+                        <button class="choose_btn white_btn">Выбрать преподавателя</button>
+                    </div>
+                </div>
+                <div class="teacher" data-language="kazakh">
+                    <div class="blue_background"></div>
+                    <div class="teacher_photo"></div>
+                    <div class="white_background">
+                        <h3>Имя Фамилия</h3>
+                        <div class="teacher_language">Казахский язык</div>
+                        <p><span>Сертификат/диплом:</span> IELTS/TOEFL</p>
+                        <p><span>Опыт работы:</span> 10 лет</p>
+                        <button class="choose_btn white_btn">Выбрать преподавателя</button>
+                    </div>
+                </div>
+                <div class="teacher" data-language="german">
+                    <div class="blue_background"></div>
+                    <div class="teacher_photo"></div>
+                    <div class="white_background">
+                        <h3>Имя Фамилия</h3>
+                        <div class="teacher_language">Немецкий язык</div>
+                        <p><span>Сертификат/диплом:</span> IELTS/TOEFL</p>
+                        <p><span>Опыт работы:</span> 10 лет</p>
+                        <button class="choose_btn white_btn">Выбрать преподавателя</button>
+                    </div>
+                </div>
+                <div class="teacher" data-language="japanese">
+                    <div class="blue_background"></div>
+                    <div class="teacher_photo"></div>
+                    <div class="white_background">
+                        <h3>Имя Фамилия</h3>
+                        <div class="teacher_language">Японский язык</div>
+                        <p><span>Сертификат/диплом:</span> IELTS/TOEFL</p>
+                        <p><span>Опыт работы:</span> 10 лет</p>
+                        <button class="choose_btn white_btn">Выбрать преподавателя</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

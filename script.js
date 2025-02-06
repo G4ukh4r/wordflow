@@ -10,3 +10,19 @@ questions.forEach((question) => {
         faqItem.classList.toggle('active');
     });
 });
+
+const languageFilter = document.querySelector('#language_filter');
+const teachers = document.querySelectorAll('.teacher');
+function filterTeachers(){
+    const selectedLang = languageFilter.value;
+    teachers.forEach((teacher) => {
+        const language = teacher.getAttribute('data-language');
+        if (selectedLang === '' || language === selectedLang) {
+            teacher.classList.add('visible');
+          } else {
+            teacher.classList.remove('visible');
+          }
+    });
+}
+languageFilter.addEventListener('change', filterTeachers);
+filterTeachers();
