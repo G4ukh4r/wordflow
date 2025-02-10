@@ -514,9 +514,8 @@ label[for='language_filter']{
 }
 .teachers{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-    align-content: flex-start;
     gap: 50px 50px;
 }
 .teacher{
