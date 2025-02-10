@@ -9,6 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="modal" id="modal">
+        <div class="modal_content">
+            <h2>Готовы начать?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quae quo ipsam repellat nulla amet corrupti assumenda animi ad ratione?</p>
+            <div class="select select_modal">
+                <select class="select_teachers">
+                    <option value="" selected>Все</option>
+                    <option value="english">Английский</option>
+                    <option value="kazakh">Казахский</option>
+                    <option value="german">Немецкий</option>
+                    <option value="japanese">Японский</option>
+                    <option value="chinese">Китайский</option>
+                    <option value="french">Французский</option>
+                    <option value="spanish">Испанский</option>
+                    <option value="korean">Корейский</option>
+                </select>
+                <label for="language_filter">выберите язык</label>
+            </div>
+            <input type="name" placeholder="Имя" class="modal_input">
+            <input type="mail" placeholder="E-mail" class="modal_input">
+            <input type="phone" placeholder="Номер телефона" class="modal_input">
+            <button class="orange_btn regular_btn modal_btn">ЗАПИСАТЬСЯ</button>
+        </div>
+    </div>
     <section class="start blue_section">
         <div class="container">
             <header>
@@ -23,13 +47,13 @@
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </nav>
-                <button class="orange_btn nav_btn">ЗАПИСАТЬСЯ</button>
+                <button class="orange_btn nav_btn openModalBtn">ЗАПИСАТЬСЯ</button>
             </header>
             <div class="header_down">
                 <div class="start_text">
                     <h1>НАШИ ПРЕПОДАВАТЕЛИ</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet, leo nec scelerisque euismod, lorem purus sollicitudin felis, non viverra risus eros sed risus. Sed in arcu dolor. Cras auctor urna vel neque finibus, vel auctor nulla bibendum. Aenean ac gravida ante, vel placerat neque. Pellentesque ut quam urna. Nulla mollis mi eget lacus fermentum, at lobortis arcu pharetra.</p>
-                    <button class="orange_btn regular_btn">ЗАПИСАТЬСЯ НА ПРОБНЫЙ КУРС</button>
+                    <button class="orange_btn regular_btn openModalBtn">ЗАПИСАТЬСЯ НА ПРОБНЫЙ КУРС</button>
                 </div>
                 <div class="teaching_image">
                     <img src="images/teaching.svg" alt="">
@@ -205,10 +229,27 @@
             </div>
             <div class="footer_button">
                 <span>Начните учить язык уже сегодня!</span>
-                <button class="orange_btn regular_btn">ЗАПИСАТЬСЯ НА КУРС</button>
+                <button class="orange_btn regular_btn openModalBtn">ЗАПИСАТЬСЯ НА КУРС</button>
             </div>
         </div>
     </footer>
+    <script>
+        const languageFilter = document.querySelector('#language_filter');
+        const teachers = document.querySelectorAll('.teacher');
+        function filterTeachers(){
+        const selectedLang = languageFilter.value;
+        teachers.forEach((teacher) => {
+            const language = teacher.getAttribute('data-language');
+            if (selectedLang === '' || language === selectedLang) {
+                teacher.classList.add('visible');
+            } else {
+                teacher.classList.remove('visible');
+            }
+            });
+        }   
+        languageFilter.addEventListener('change', filterTeachers);
+        filterTeachers();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

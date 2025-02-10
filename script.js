@@ -11,18 +11,19 @@ questions.forEach((question) => {
     });
 });
 
-const languageFilter = document.querySelector('#language_filter');
-const teachers = document.querySelectorAll('.teacher');
-function filterTeachers(){
-    const selectedLang = languageFilter.value;
-    teachers.forEach((teacher) => {
-        const language = teacher.getAttribute('data-language');
-        if (selectedLang === '' || language === selectedLang) {
-            teacher.classList.add('visible');
-          } else {
-            teacher.classList.remove('visible');
-          }
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.querySelector('#modal');
+    const openModalButtons = document.querySelectorAll('.openModalBtn');
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            document.body.classList.add('no-scroll');
+        });
     });
-}
-languageFilter.addEventListener('change', filterTeachers);
-filterTeachers();
+    modal.addEventListener('click', (event) => {
+        if(event.target === modal){
+            modal.style.display = 'none';
+            document.body.classList.remove('no-scroll');
+        }
+    });
+});

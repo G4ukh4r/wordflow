@@ -9,6 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="modal" id="modal">
+        <div class="modal_content">
+            <h2>Готовы начать?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quae quo ipsam repellat nulla amet corrupti assumenda animi ad ratione?</p>
+            <div class="select select_modal">
+                <select class="select_teachers">
+                    <option value="" selected>Все</option>
+                    <option value="english">Английский</option>
+                    <option value="kazakh">Казахский</option>
+                    <option value="german">Немецкий</option>
+                    <option value="japanese">Японский</option>
+                    <option value="chinese">Китайский</option>
+                    <option value="french">Французский</option>
+                    <option value="spanish">Испанский</option>
+                    <option value="korean">Корейский</option>
+                </select>
+                <label for="language_filter">выберите язык</label>
+            </div>
+            <input type="name" placeholder="Имя" class="modal_input">
+            <input type="mail" placeholder="E-mail" class="modal_input">
+            <input type="phone" placeholder="Номер телефона" class="modal_input">
+            <button class="orange_btn regular_btn modal_btn">ЗАПИСАТЬСЯ</button>
+        </div>
+    </div>
     <section class="faq blue_section">
         <div class="container">
             <header>
@@ -23,7 +47,7 @@
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </nav>
-                <button class="orange_btn nav_btn">ЗАПИСАТЬСЯ</button>
+                <button class="orange_btn nav_btn openModalBtn">ЗАПИСАТЬСЯ</button>
             </header>
         </div>
         <div class="faq_down">
@@ -175,7 +199,7 @@
             </div>
             <div class="footer_button">
                 <span>Начните учить язык уже сегодня!</span>
-                <button class="orange_btn regular_btn">ЗАПИСАТЬСЯ НА КУРС</button>
+                <button class="orange_btn regular_btn openModalBtn">ЗАПИСАТЬСЯ НА КУРС</button>
             </div>
         </div>
     </footer>
