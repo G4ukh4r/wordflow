@@ -493,7 +493,8 @@ label[for='language_filter']{
     background-color: #F39221;
     border-radius: 50%;
     top: 55px;
-    left: 126px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .white_background h3, p{
     margin-top: 0;
@@ -583,7 +584,7 @@ label[for='language_filter']{
     height: 100vh;
 }
 /* reviews */
-.reviews_image{
+.reviews_image img{
     border-radius: 24px;
 }
 .opinion{
@@ -614,6 +615,7 @@ label[for='language_filter']{
     padding: 40px 42px;
     color: #fff;
     display: flex;
+    gap: 54px;
     justify-content: space-between;
     margin-bottom: 40px;
 }
@@ -637,4 +639,180 @@ label[for='language_filter']{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+/* media */
+@media screen and (max-width: 1200px){
+    .container{
+        padding: 0 30px;
+        width: auto;
+    }
+    footer .container{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .programs_list{
+        justify-content: center;
+        gap: 20px;
+    }
+    .format_cards{
+        gap: 20px;
+    }
+    .nav li{
+        margin-right: 30px;
+    }
+    .format_card h3{
+        font-size: 16px;
+    }
+    .format_card{
+        white-space: unset;
+    }
+    .header_down{
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 1030px){
+    .logo img{
+        width: 120px;
+    }
+    .nav_btn{
+        padding: 10px 25px;
+    }
+    header{
+        padding: 20px 30px;
+    }
+    .start_text h1{
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .start_image img{
+        width: 450px;
+    }
+    .format_card_text{
+        height: 80px;
+
+    }
+}
+@media screen and (max-width: 940px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .advantage_left{
+        gap: 50px;
+    }
+    .advantage_right{
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 780px){
+    .header_down{
+        flex-direction: column;
+    }
+    .start_text{
+        max-width: unset;
+    }
+    .start_image, .teaching_image, .reviews_image{
+        display: none;
+    }
+    .programs, .format, .advantages, footer, .questions, .choose_teacher, .reviews{
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .footer_about{
+        max-width: 100%;
+    }
+    .footer_nav{
+        width: 50%;
+    }
+    footer .container{
+        gap: 33px;
+    }
+    header{
+        margin-bottom: 70px;
+    }
+    .start{
+        padding-bottom: 80px;
+    }
+    .advantage_left img, .advantage_right img{
+        width: 200px;
+    }
+    .adv_text p{
+        font-size: 16px;
+    }
+    .adv_text h3{
+        font-size: 24px;
+    }
+    .format_cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+        text-align: center;
+    }
+    .nav li{
+        margin-right: 0;
+    }
+    .faq_down h1{
+        font-size: 32px;
+    }
+    .review{
+        flex-direction: column;
+    }
+    .review_photo{
+        width: 90px;
+        height: 90px;
+    }
+    .review_left{
+        /* flex-direction: row;
+        justify-content: space-between; */
+        display: grid;
+        grid-template-columns: 1fr 2fr 4fr;
+        gap: 30px;
+    }
+    .review_date{
+        text-align: end;
+    }
+    .name_surname{
+        margin: 0;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 500px){
+    .advantage_left img, .advantage_right img{
+        width: 120px;
+        border-radius: 20px;
+    }
+    .advantage_left, .advantage_right{
+        gap: 20px;
+    }
+    .adv_text h3{
+        display: none;
+    }
+    .adv_text p{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 375px){
+    .container{
+        padding: 0 15px;
+    }
+    .nav{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 15px 0;
+        text-align: center;
+    }
+    .white_background{
+        padding: 72px 40px 36px;
+    }
+    .faq_item{
+        border-radius: 40px;
+    }
 }
