@@ -542,7 +542,7 @@ label[for='language_filter']{
     background-color: #FFF6F0;
     border-radius: 24px;
     padding: 40px 35px;
-    width: 400px;
+    max-width: 400px;
     color: #0B4973;
     box-sizing: border-box;
 }
@@ -797,6 +797,14 @@ label[for='language_filter']{
     }
     .adv_text p{
         margin-bottom: 0;
+    }
+    .modal{
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .modal_content{
+        width: auto;
+        padding: 30px 25px
     }
 }
 @media screen and (max-width: 375px){
